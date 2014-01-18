@@ -1,0 +1,64 @@
+/*.container {
+	width: 960px;
+	margin: auto;
+
+}*/
+
+body {
+	background-color: #F6F1BA;
+}
+
+.poster {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px ridge #FCEF8D;
+}
+
+.title {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	color: #8B2731;
+	font-family: 'Elsie', cursive;
+}
+
+h1 {
+
+	text-align: center;
+	color: #8B2731;
+	font-family: 'Monoton', cursive
+}
+
+li {
+	color: #8B2731;
+	font-family: 'Elsie', cursive;	
+}
+
+.form {
+	color: #8B2731;
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Elsie', cursive;
+}
+
+#movielist {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#details {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-position:inside;
+}
+
+a {
+	font-family: 'Elsie', cursive;
+	color: #8B2731;
+}
