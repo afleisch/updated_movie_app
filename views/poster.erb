@@ -1,40 +1,43 @@
 <body id="poster">
  <div class="container">
- <div class="row">
- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-   <h1 class="title"><%= @movieinfo["Title"] %></h1>
- </div>
- </div>
- </div>
- <div class="container">
- <div class="row">
- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-	<p> (Click on the poster to be taken to the IMDB page) </p>
- </div>
- </div>
- </div>
- <div class="container">
- <div class="row">
- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">	
-	<a href=http://www.imdb.com/title/<%= "#{@movieinfo["imdbID"]}" %> target="_blank"> <img class="poster" src="<%= @movieinfo["Poster"] %>"> </a>
- </div>
- </div>
- </div>
-<% @movieinfo %>
-	<div id="details">
-		<ul class="list">
-			<li>Plot: <%= @movieinfo["Plot"] %> </li>
-			<li>Release Date: <%= @movieinfo["Released"] %> </li>
-			<li>Rated: <%= @movieinfo["Rated"] %> </li>
-			<li>Runtime: <%= @movieinfo["Runtime"] %> </li>
-			<li>Genre: <%= @movieinfo["Genre"] %> </li>
-			<li>Director: <%= @movieinfo["Director"] %> </li>
-			<li>Actors: <%= @movieinfo["Actors"] %> </li>
-		</ul>
-	</div>
+  <div class="row">
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <h1 class="title"><%= @movieinfo["Title"] %></h1>
+   </div>
   </div>
-</div>
-</div>
+ </div>
+
+
+ <div class="container">
+  <div class="row">
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+	<p> (Click on the poster to be taken to the IMDB page) </p>
+   </div>
+  </div>
+ </div>
+
+
+ <div class="container">
+  <div class="row">
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">	
+	<a href=http://www.imdb.com/title/<%= "#{@movieinfo["imdbID"]}" %> target="_blank"> <img class="poster" src="<%= @movieinfo["Poster"] %>"> </a>
+   </div>
+  </div>
+ </div>
+
+<% @movieinfo %>
+ <div id="details">
+   <ul class="list">
+    <li>Plot: <%= @movieinfo["Plot"] %> </li>
+	<li>Release Date: <%= @movieinfo["Released"] %> </li>
+	<li>Rated: <%= @movieinfo["Rated"] %> </li>
+	<li>Runtime: <%= @movieinfo["Runtime"] %> </li>
+	<li>Genre: <%= @movieinfo["Genre"] %> </li>
+	<li>Director: <%= @movieinfo["Director"] %> </li>
+	<li>Actors: <%= @movieinfo["Actors"] %> </li>
+   </ul>
+ </div>
+
 </body>
 
 
