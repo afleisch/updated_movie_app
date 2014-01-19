@@ -1,15 +1,37 @@
+<body id="result">
 
-
-<h1>Movie Results</h1>
-	
-
-<% @movie_array_of_hashes.map do |movie_hash| %>
-<div id="movielist">
-	
-		<a href="/poster/<%= movie_hash["imdbID"] %>"><%= movie_hash["Title"] %> - <%=movie_hash["Year"] %></a> 
-	
+<div class="container">
+ <div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">	
+   <h1 id="index_header">Movie Results</h1>
+  </div>
+ </div>
 </div>
+
+
+<div class="container">
+ <div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+  	<ul>
+	
+<% @movie_array_of_hashes.map do |movie_hash| %>
+
+	<li><a id="movielist" href="/poster/<%= movie_hash["imdbID"] %>"><%= movie_hash["Title"] %> - <%=movie_hash["Year"] %></a></li>
+
 <%end %>
+	</ul>
+</div>
+</div>
+</div>
+
+
+
+</body>
+
+
+
+ 
+
 		
 
 
