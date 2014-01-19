@@ -1,64 +1,85 @@
-/*.container {
-	width: 960px;
-	margin: auto;
-
-}*/
+.container {
+	margin-right: auto;
+	margin-left: auto;
+}
 
 body {
-	background-color: #F6F1BA;
+	font-family: 'Rock Salt', cursive;
+	color: #FBB829
 }
 
-.poster {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border: 10px ridge #FCEF8D;
-}
-
-.title {
+h1 {
 	text-align: center;
+	font-family: 'Monoton', cursive
 }
 
 p {
 	text-align: center;
-	color: #8B2731;
-	font-family: 'Elsie', cursive;
 }
 
-h1 {
+#index {
+	background: url("/images/pulpfiction.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
 
+#index_header {
+	padding-top: 50px;
+	padding-left: 15px;
+	text-align: left;
+}
+
+#index_form {
+	padding: 200px 400px 300px 0;
 	text-align: center;
-	color: #8B2731;
-	font-family: 'Monoton', cursive
+	float: left;
 }
 
-li {
-	color: #8B2731;
-	font-family: 'Elsie', cursive;	
-}
-
-.form {
-	color: #8B2731;
-	width: 400px;
-	margin-right: auto;
-	margin-left: auto;
-	font-family: 'Elsie', cursive;
+#result {
+	background: url("/images/gandalf.png") no-repeat right top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
 }
 
 #movielist {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	color: #FBB829;
+	text-decoration: none
+}
+
+#poster {
+	background: url("/images/curtain.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+
+}
+.poster {
+	display: block;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 20px ridge #FBB829;
+}
+
+.title {
+	text-align: center;
+	padding-top: 10px;
 }
 
 #details {
+	display: block;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	list-style-position:inside;
-}
-
-a {
-	font-family: 'Elsie', cursive;
-	color: #8B2731;
+	max-width: 500px;
+	padding-right: 50px;
 }
