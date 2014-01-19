@@ -16,12 +16,16 @@ post '/result' do #send the information entered into search
 	response = Typhoeus.get("www.omdbapi.com", :params => {:s => search_str})
 	binding.pry
 	@initial_data = JSON.parse(response.body)
+	if @initial_data['Response'] == "False"
+		redirect "/"
+	else
 	@movie_array_of_hashes = @initial_data["Search"]
 	@just_movies =[]
 	@movie_array_of_hashes.select do |movie_hash|
 		if movie_hash["Type"] == "movie"
 			@just_movies << movie_hash
 		end
+	  end
 	end
 
 	erb :result
