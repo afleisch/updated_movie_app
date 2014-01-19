@@ -37,6 +37,11 @@ p {
 	float: left;
 }
 
+#error {
+	width: 150px;
+	background-color: #F97731;
+}
+
 #result {
 	background: url("/images/gandalf.png") no-repeat right top fixed;
 	-webkit-background-size: cover;
@@ -82,4 +87,9 @@ p {
 	list-style-position:inside;
 	max-width: 500px;
 	padding-right: 50px;
+}
+
+#imdb {
+	text-decoration: none;
+	color: #FBB829;
 }
